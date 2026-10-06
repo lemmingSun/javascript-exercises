@@ -2,7 +2,7 @@ const sumAll = function(...args) {
     
     let sum = 0;
     if(args.length > 2)return "ERROR";
-    if(typeof args[1] == "string"|| typeof args[0] == "string")return "ERROR";
+    if(!Number.isInteger(args[1]) || !Number.isInteger(args[0]))return "ERROR";
 
     let arr = args.sort();
     
